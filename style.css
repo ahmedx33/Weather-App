@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #354650;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    height: 450px;
+    background: #232831;
+    border-radius: 20px;
+}
+
+.left-side {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    background: url(images/1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 20px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.left-side .lianer-grideint-clr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #5c6bc0 10%, #0d47a1 100%);
+    opacity: 0.5; 
+    border-radius: 20px;
+}
+.left-side .group-one {
+    color: #fff;
+    font-weight: 500;
+    padding: 1rem;
+    z-index: 99999;
+}
+
+.left-side .group-two {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    color: #fff;
+    z-index: 99999;
+}
+
+.left-side .group-two span:nth-child(1) {
+    font-size: 3.5rem;
+}
+
+.left-side .group-two span:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.left-side .group-two span:nth-child(3) {
+    font-weight: 600;
+}
+
+.left-side:hover {
+    transform: scale(1.1) perspective(2500px) rotateY(15deg);
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: #232831;
+    color: white;
+    width: 55%;
+    border-radius: 20px;
+}
+
+
+.right-side .group-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side .group-one div:nth-child(1),
+.right-side .group-one div:nth-child(2),
+.right-side .group-one div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+
+.right-side .group-one div:nth-child(1) span,
+.right-side .group-one div:nth-child(2) span,
+.right-side .group-one div:nth-child(3) span{
+    font-weight: normal;
+}
+.right-side .group-two {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0px 11px 15px 3px #1C2029;
+}
+
+.right-side .group-two div:nth-child(1),
+.right-side .group-two div:nth-child(2),
+.right-side .group-two div:nth-child(3),
+.right-side .group-two div:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    font-size: 1rem;
+    border-radius: 15px;
+    transition: all .4s ease;
+    width: 25%;
+}
+
+.right-side .group-two div:nth-child(1) i,
+.right-side .group-two div:nth-child(2) i,
+.right-side .group-two div:nth-child(3) i,
+.right-side .group-two div:nth-child(4) i {
+    font-size: 2rem;
+}
+
+.right-side .group-two div:nth-child(1) .C,
+.right-side .group-two div:nth-child(2) .C,
+.right-side .group-two div:nth-child(3) .C,
+.right-side .group-two div:nth-child(4) .C {
+    font-weight: 900;
+}
+
+.right-side input[type="button"] {
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #2A3C92;
+    color: #fff;
+    margin-top: 2rem;
+    font-weight: 600;
+    box-shadow: 2px 6px 8px #1C2029;
+    transition: all .3s ease;
+}
+
+.right-side input[type="button"]:hover {
+    background-color: #172374;
+}
+.right-side .group-two div:nth-child(1):hover,
+.right-side .group-two div:nth-child(2):hover,
+.right-side .group-two div:nth-child(3):hover,
+.right-side .group-two div:nth-child(4):hover {
+    transform: scale(1.2);
+    border-radius: 15px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
